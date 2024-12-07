@@ -6,7 +6,7 @@ def read_nums():
 
     with open('input.txt', 'r') as file:
         for line in file:
-            fmtd_line = line.rstrip('\n').split('   ')
+                fmtd_line = line.rstrip('\n').split('   ')
             left_nums.append(fmtd_line[0])
             right_nums.append(fmtd_line[1])
 
