@@ -2,8 +2,6 @@ class reports():
     def __init__(self):
         self.reports = []
         self.safe_reports_count = 0
-        self.unsafe_reports_count = 0
-        self.dampener_safe_reports = 0
         pass
 
     def open_reports(self):
@@ -61,7 +59,10 @@ class reports():
                         self.safe_reports_count += 1
                         break
 
-        print(f"Safe Reports with Safety Dampener turned on: {self.safe_reports_count}")
+        print(
+              "Safe Reports with Safety Dampener turned on:"
+              " {self.safe_reports_count}"
+              )
 
 
 if __name__ == '__main__':
