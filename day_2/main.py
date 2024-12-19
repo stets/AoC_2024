@@ -1,8 +1,7 @@
-class reports():
+class Reports():
     def __init__(self):
         self.reports = []
         self.safe_reports_count = 0
-        pass
 
     def open_reports(self):
         with open('input.txt', 'r') as file:
@@ -66,7 +65,7 @@ class reports():
 
 
 if __name__ == '__main__':
-    reports = reports()
+    reports = Reports()
     reports.open_reports()
     reports.check_all_reports()
     reports.safety_dampener()
